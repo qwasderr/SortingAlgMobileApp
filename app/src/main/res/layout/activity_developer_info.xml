@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="462dp"
+        android:layout_centerHorizontal="true"
+        android:elevation="12dp"
+        app:cardCornerRadius="500dp">
+
+        <ImageView
+            android:id="@+id/imageDeveloper"
+            android:layout_width="match_parent"
+            android:layout_height="462dp"
+            android:contentDescription="@string/developer_photo_desc"
+            android:scaleType="centerCrop"
+            android:src="@drawable/developer_photo" />
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/tvDeveloperName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ім'я Розробника"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvDeveloperInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Коротка інформація про розробника"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Назад"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
